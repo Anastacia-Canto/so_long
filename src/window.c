@@ -32,8 +32,6 @@ void	open_images(t_vars *vars)
 
 void	print_map(t_vars *vars)
 {
-
-	mlx_clear_window(vars->mlx, vars->win);
 	vars->line = 0;
 	while (vars->line < vars->height)
 	{
