@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/graphics-MinilibX-0000FF"> <img src="https://img.shields.io/badge/OS-Linux-0000FF"> <img src="https://img.shields.io/badge/game-2D-0000FF">
 
-The objective of this project is to create a simple 2D game. The theme choosen was Sonic, like the SEGA game.
+It's one more 42 Lisboa project! The objective of this project is to create a simple 2D game. The theme choosen was Sonic, like the SEGA game.
 So, Sonic has to escape after collecting all the rings, but game is over if he touchs Robotinik!
 
 ![](https://github.com/Anastacia-Canto/so_long/blob/main/Peek%202022-09-15%2015-53.gif)
