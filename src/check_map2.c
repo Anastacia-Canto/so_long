@@ -6,7 +6,7 @@
 /*   By: anastacia <anastacia@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 09:28:51 by ansilva-          #+#    #+#             */
-/*   Updated: 2022/09/13 11:42:15 by anastacia        ###   ########.fr       */
+/*   Updated: 2022/09/15 14:48:42 by anastacia        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ int	check_shape(t_vars *vars)
 	int	width;
 	int	index;
 
+	if (!vars->map[0])
+		return (0);
 	width = (int)ft_strlen(vars->map[0]);
 	index = 0;
 	while (index < vars->height)
