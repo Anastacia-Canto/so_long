@@ -5,7 +5,7 @@
 The objective of this project is to create a simple 2D game. The theme choosen was Sonic, like the SEGA game.
 So, Sonic has to escape after collecting all the rings, but game is over if he touchs Robotinik!
 
-![](peek 2022-09-15 15-42.gif)
+![](https://github.com/Anastacia-Canto/so_long/blob/main/Peek%202022-09-15%2015-53.gif)
 
 ## Skills
 
@@ -41,7 +41,8 @@ make
 ./so_long ../maps/map3.ber
 
 ```
-
+You can change the map, changing the path. Another option is "../maps/map2.ber". 
+You can even make your own maps! But remember to respect the map rules!
 
 Use the keys 'W', 'A', 'S' and 'D' to move the player and 'ESC' or 'x' button to quit.
 The exit only opens when all the rings are collected. If Sonic touchs Robotinik the game is over.
