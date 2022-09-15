@@ -6,7 +6,7 @@
 /*   By: anastacia <anastacia@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 09:29:15 by ansilva-          #+#    #+#             */
-/*   Updated: 2022/09/14 15:12:44 by anastacia        ###   ########.fr       */
+/*   Updated: 2022/09/15 14:40:24 by anastacia        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,19 @@
 void	open_images(t_vars *vars)
 {
 	vars->free_way = mlx_xpm_file_to_image(vars->mlx,
-			"./img/free_way64.xpm", &vars->img_width, &vars->img_height);
+			"../img/free_way64.xpm", &vars->img_width, &vars->img_height);
 	vars->walls = mlx_xpm_file_to_image(vars->mlx,
-			"./img/walls64.xpm", &vars->img_width, &vars->img_height);
+			"../img/walls64.xpm", &vars->img_width, &vars->img_height);
 	vars->ring = mlx_xpm_file_to_image(vars->mlx,
-			"./img/ring1.xpm", &vars->img_width, &vars->img_height);
+			"../img/ring1.xpm", &vars->img_width, &vars->img_height);
 	vars->door = mlx_xpm_file_to_image(vars->mlx,
-			"./img/closed_door64.xpm", &vars->img_width, &vars->img_height);
+			"../img/closed_door64.xpm", &vars->img_width, &vars->img_height);
 	vars->robot = mlx_xpm_file_to_image(vars->mlx,
-			"./img/robot.xpm", &vars->img_width, &vars->img_height);
+			"../img/robot.xpm", &vars->img_width, &vars->img_height);
 	vars->robot2 = mlx_xpm_file_to_image(vars->mlx,
-			"./img/robot2.xpm", &vars->img_width, &vars->img_height);
+			"../img/robot2.xpm", &vars->img_width, &vars->img_height);
 	vars->sonic = mlx_xpm_file_to_image(vars->mlx,
-			"./img/s_wait_d.xpm", &vars->img_width, &vars->img_height);
+			"../img/s_wait_d.xpm", &vars->img_width, &vars->img_height);
 }
 
 void	print_map(t_vars *vars)

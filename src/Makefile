@@ -6,7 +6,7 @@
 #    By: anastacia <anastacia@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/31 08:24:28 by anastacia         #+#    #+#              #
-#    Updated: 2022/09/14 13:15:04 by anastacia        ###   ########.fr        #
+#    Updated: 2022/09/15 14:42:24 by anastacia        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,25 +14,24 @@ $(VERBOSE).SILENT:
 
 NAME = so_long
 SRC = so_long\
-		src/check_map src/check_map2\
-		src/moves src/moves2\
-		src/animation\
-		src/window src/window2\
-		get_next_line/get_next_line\
-		get_next_line/get_next_line_utils\
+		check_map check_map2\
+		moves moves2 animation\
+		window window2\
+		../get_next_line/get_next_line\
+		../get_next_line/get_next_line_utils\
 
 
-PRINTF = printf/libftprintf.a
-PRINTF_PATH = ./printf
+PRINTF = ../printf/libftprintf.a
+PRINTF_PATH = ../printf
 
-LIBFT = libft/libft.a
-LIBFT_PATH = ./libft
+LIBFT = ../libft/libft.a
+LIBFT_PATH = ../libft
 
 
 CC = gcc
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -I. -fsanitize=address
-LINKS = -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz
+LINKS = -L../mlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz
 
 
 all: $(NAME)

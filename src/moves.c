@@ -6,7 +6,7 @@
 /*   By: anastacia <anastacia@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 10:58:50 by ansilva-          #+#    #+#             */
-/*   Updated: 2022/09/14 14:57:58 by anastacia        ###   ########.fr       */
+/*   Updated: 2022/09/15 14:40:44 by anastacia        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	manage_collectables(t_vars *vars)
 	{
 		mlx_destroy_image(vars->mlx, vars->door);
 		vars->door = mlx_xpm_file_to_image(vars->mlx,
-				"./img/exit.xpm", &vars->img_width, &vars->img_height);
+				"../img/exit.xpm", &vars->img_width, &vars->img_height);
 	}
 }
 
@@ -54,7 +54,7 @@ int	actions(char *actual, char *new, t_vars *vars)
 	{
 		mlx_destroy_image(vars->mlx, vars->sonic);
 		vars->sonic = mlx_xpm_file_to_image(vars->mlx,
-				"./img/s_lose.xpm", &vars->img_width, &vars->img_height);
+				"../img/s_lose.xpm", &vars->img_width, &vars->img_height);
 		vars->game_over = 1;
 	}
 	*actual = '0';

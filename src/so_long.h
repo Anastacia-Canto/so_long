@@ -6,20 +6,20 @@
 /*   By: anastacia <anastacia@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 08:23:49 by anastacia         #+#    #+#             */
-/*   Updated: 2022/09/14 14:56:47 by anastacia        ###   ########.fr       */
+/*   Updated: 2022/09/15 14:41:49 by anastacia        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include <mlx_linux/mlx.h>
+# include <../mlx_linux/mlx.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include "libft/libft.h"
-# include "printf/ft_printf.h"
-# include "get_next_line/get_next_line.h"
+# include "../libft/libft.h"
+# include "../printf/ft_printf.h"
+# include "../get_next_line/get_next_line.h"
 
 typedef struct s_vars {
 	void	*mlx;

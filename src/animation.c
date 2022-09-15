@@ -6,7 +6,7 @@
 /*   By: anastacia <anastacia@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 13:14:18 by anastacia         #+#    #+#             */
-/*   Updated: 2022/09/14 13:27:10 by anastacia        ###   ########.fr       */
+/*   Updated: 2022/09/15 14:41:14 by anastacia        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,16 @@ void	move_enemy(t_vars *vars, int control)
 	if (control == 0 || control == 2)
 	{
 		vars->robot = mlx_xpm_file_to_image(vars->mlx,
-				"./img/robot2.xpm", &vars->img_width, &vars->img_height);
+				"../img/robot2.xpm", &vars->img_width, &vars->img_height);
 		vars->robot2 = mlx_xpm_file_to_image(vars->mlx,
-				"./img/robot.xpm", &vars->img_width, &vars->img_height);
+				"../img/robot.xpm", &vars->img_width, &vars->img_height);
 	}
 	else
 	{
 		vars->robot = mlx_xpm_file_to_image(vars->mlx,
-				"./img/robot.xpm", &vars->img_width, &vars->img_height);
+				"../img/robot.xpm", &vars->img_width, &vars->img_height);
 		vars->robot2 = mlx_xpm_file_to_image(vars->mlx,
-				"./img/robot2.xpm", &vars->img_width, &vars->img_height);
+				"../img/robot2.xpm", &vars->img_width, &vars->img_height);
 	}
 }
 
@@ -55,16 +55,16 @@ int	move_rings(t_vars *vars, int control)
 	mlx_destroy_image(vars->mlx, vars->ring);
 	if (control == 0)
 		vars->ring = mlx_xpm_file_to_image(vars->mlx,
-				"./img/ring1.xpm", &vars->img_width, &vars->img_height);
+				"../img/ring1.xpm", &vars->img_width, &vars->img_height);
 	else if (control == 1)
 		vars->ring = mlx_xpm_file_to_image(vars->mlx,
-				"./img/ring2.xpm", &vars->img_width, &vars->img_height);
+				"../img/ring2.xpm", &vars->img_width, &vars->img_height);
 	else if (control == 2)
 		vars->ring = mlx_xpm_file_to_image(vars->mlx,
-				"./img/ring3.xpm", &vars->img_width, &vars->img_height);
+				"../img/ring3.xpm", &vars->img_width, &vars->img_height);
 	else
 		vars->ring = mlx_xpm_file_to_image(vars->mlx,
-				"./img/ring4.xpm", &vars->img_width, &vars->img_height);
+				"../img/ring4.xpm", &vars->img_width, &vars->img_height);
 	return (0);
 }
 
